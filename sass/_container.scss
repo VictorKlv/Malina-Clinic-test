@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 968px;
+  min-height: 812px;
+  margin: auto;
+  padding: 44px 44px 40px 38px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.50));
+}

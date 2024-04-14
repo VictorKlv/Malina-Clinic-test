@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="./sass/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__wrapper">
+          <p class="header__title">Все покупатели</p>
+          <div class="header__search">
+            <input class="header__search-input" type="search" placeholder="Поиск">
+          </div>
+          <div class="header__sort">
+            <select>
+              <option></option>
+              <option value="name">Имя</option>
+              <option value="company">Компания</option>
+              <option value="country">Страна</option>
+              <option value="status">Статус</option>
+            </select>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__row table__head-row">
+                <th class="table__name">Имя</th>
+                <th class="table__company">Компания</th>
+                <th class="table__phone">Номер телефона</th>
+                <th class="table__email">Email</th>
+                <th class="table__country">Страна</th>
+                <th class="table__status">Статус</th>
+              </tr>
+            </thead>
+
+            <tbody class="table__body">
+            </tbody>
+          </table>
+          <div class="info">
+            <p class="info__text">Показаны данные с 
+              <span class="info__text-start"></span> по 
+              <span class="info__text-end"></span> из 
+              <span class="info__text-count"></span> записей</p>
+            <div class="pagination">
+              <button type="button" class="pagination__btn pagination__btn-left">
+                <img src=".//img/left-arrow.svg" alt="Стрелка влево.">
+              </button>
+              <div class="pagination__inner"></div>
+              <button type="button" class="pagination__btn pagination__btn-right">
+                <img src=".//img/right-arrow.svg" alt="Стрелка вправо.">
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

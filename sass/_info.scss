@@ -1,0 +1,14 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  
+  &__text {
+    margin: 0;
+    padding: 0;
+    color: #B5B7C0;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+  }
+}
